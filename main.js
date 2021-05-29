@@ -34,6 +34,9 @@ bot.command('hello', ctx => {
   ctx.reply('Huzzah! hello');
 })
 
-bot.launch()
+bot.launch().then(() => {
+        console.log("Logged as "+bot.context.botInfo.first_name)
+        //If it's shows your bot name, Then try execute /start Command, Enjoy!
+});
 
 
