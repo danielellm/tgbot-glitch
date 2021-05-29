@@ -1,7 +1,7 @@
 {
   "name": "tgbot-glitch",
   "version": "1.0.0",
-  "description": "Telegram Bot on Glitch Platform",
+  "description": "Telegram Bot Vercel",
   "main": "main.js",
   "scripts": {
     "build": "node main.js",
