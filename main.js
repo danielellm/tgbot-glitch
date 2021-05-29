@@ -5,7 +5,7 @@ const { Telegraf } = require('telegraf')
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
-
+debug('Bot runs in production mode');
 bot.telegram.setWebhook('https://api.vercel.com/v1/integrations/deploy/prj_zztUObwqX2bWs0EAroerlaeOPWpw/VbJvlvf1u2')
 
 // Listener
@@ -34,9 +34,6 @@ bot.command('hello', ctx => {
   ctx.reply('Huzzah! hello');
 })
 
-bot.launch().then(() => {
-        console.log("Logged as "+bot.context.botInfo.first_name)
-        //If it's shows your bot name, Then try execute /start Command, Enjoy!
-});
+bot.launch()
 
 
