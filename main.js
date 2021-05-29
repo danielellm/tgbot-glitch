@@ -14,10 +14,18 @@ bot.startWebhook('/bot${BOT_TOKEN}', null, PORT);
 // Listener
 
 bot.command('help', ctx => {
- //There's no need slash.
 
- //Reply when /hello command was executed
-  ctx.reply('Huzzah! help');
+  ctx.reply('How can i help you? /n 
+           use this buttons to find your topic.. /n
+            
+            /welcome
+            /where
+            /what
+            /when
+            /rules
+            
+            
+');
 })
 
 //Do something when start command was executed
@@ -28,15 +36,7 @@ bot.start(ctx => {
 ctx.reply('Hello, Human!');
 })
 
-bot.on('message', function (message) {
-    if (message.new_chat_members != undefined) {
-        console.log(message.new_chat_member.username);
-        console.log(message.new_chat_member.id);
-       ctx.reply('Hello, ' +message.new_chat_member.username)
-    }else{
-        console.log("new_chat_members is not defined");
-    }
-});
+
 
 bot.command('hello', ctx => {
  //There's no need slash.
