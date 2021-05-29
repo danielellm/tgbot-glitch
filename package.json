@@ -5,8 +5,7 @@
   "main": "main.js",
   "scripts": {
     "build": "node main.js",
-    "test": "node main.js",
-    "start": "node main.js"
+    "public": "node main.js"
   },
   "engines": {
     "node": "12.22.1"
