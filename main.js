@@ -14,7 +14,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 
 bot.command('help', ctx => {
 
-  ctx.reply('How can i help youuuu?n/ use this buttons to find your topic.. /n/n  /welcome /n /what /n /where/n /when ');
+  ctx.reply('How can i help you2?<br> use this buttons to find your topic.. /n/n  /welcome /n /what /n /where/n /when ');
 })
 
 //Do something when start command was executed
