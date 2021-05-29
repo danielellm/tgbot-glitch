@@ -4,6 +4,8 @@
   "description": "Telegram Bot on Glitch Platform",
   "main": "main.js",
   "scripts": {
+    "build": "node main.js",
+    "test": "node main.js",
     "start": "node main.js"
   },
   "engines": {
