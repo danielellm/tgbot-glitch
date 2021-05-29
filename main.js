@@ -6,7 +6,7 @@ const { Telegraf } = require('telegraf')
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
 
-
+bot.telegram.setWebhook('https://api.vercel.com/v1/integrations/deploy/prj_zztUObwqX2bWs0EAroerlaeOPWpw/VbJvlvf1u2')
 
 // Listener
 
