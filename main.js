@@ -25,7 +25,6 @@ bot.start(ctx => {
 ctx.reply('Hello, Human!');
 })
 
-
 bot.command('hello', ctx => {
  //There's no need slash.
 
