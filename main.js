@@ -15,7 +15,7 @@ bot.startWebhook('/bot${BOT_TOKEN}', null, PORT);
 
 bot.command('help', ctx => {
 
-  ctx.reply('How can i help you?');
+  ctx.reply('How can i help you?/n test');
 })
 
 //Do something when start command was executed
