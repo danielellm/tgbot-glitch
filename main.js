@@ -28,6 +28,16 @@ bot.start(ctx => {
 ctx.reply('Hello, Human!');
 })
 
+bot.on('message', function (message) {
+    if (message.new_chat_members != undefined) {
+        console.log(message.new_chat_member.username);
+        console.log(message.new_chat_member.id);
+       ctx.reply('Hello, ' +message.new_chat_member.username)
+    }else{
+        console.log("new_chat_members is not defined");
+    }
+});
+
 bot.command('hello', ctx => {
  //There's no need slash.
 
