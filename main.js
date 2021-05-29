@@ -13,8 +13,6 @@ bot.telegram.setWebhook(WEBHOOK_URL);
 bot.startWebhook('/bot${BOT_TOKEN}', null, PORT);
 // Listener
 
-
-
 bot.command('help', ctx => {
  //There's no need slash.
 
