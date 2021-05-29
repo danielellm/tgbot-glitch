@@ -5,10 +5,12 @@ const { Telegraf } = require('telegraf')
 
 const BOT_TOKEN = process.env.BOT_TOKEN || '';
 const PORT = (process.env.PORT && parseInt(process.env.PORT, 10)) || 3000;
-const WEBHOOK_URL = `${process.env.WEBHOOK_URL}/bot${BOT_TOKEN}`;
+const WEBHOOK_URL = '${process.env.WEBHOOK_URL}/bot${BOT_TOKEN}';
+
+const bot = new Telegraf(process.env.BOT_TOKEN)
 
 bot.telegram.setWebhook(WEBHOOK_URL);
-bot.startWebhook(`/bot${BOT_TOKEN}`, null, PORT);
+bot.startWebhook('/bot${BOT_TOKEN}', null, PORT);
 // Listener
 
 
