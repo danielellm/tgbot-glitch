@@ -3,11 +3,12 @@ const { Telegraf } = require('telegraf')
 // Bot TOKEN
 
 
-const bot = new Telegraf(process.env.BOT_TOKEN)
+const BOT_TOKEN = process.env.BOT_TOKEN || '';
+const PORT = (process.env.PORT && parseInt(process.env.PORT, 10)) || 3000;
+const WEBHOOK_URL = `${process.env.WEBHOOK_URL}/bot${BOT_TOKEN}`;
 
-debug('Bot runs in production mode');
-bot.telegram.setWebhook('https://api.vercel.com/v1/integrations/deploy/prj_zztUObwqX2bWs0EAroerlaeOPWpw/VbJvlvf1u2')
-
+bot.telegram.setWebhook(WEBHOOK_URL);
+bot.startWebhook(`/bot${BOT_TOKEN}`, null, PORT);
 // Listener
 
 
