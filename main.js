@@ -15,17 +15,7 @@ bot.startWebhook('/bot${BOT_TOKEN}', null, PORT);
 
 bot.command('help', ctx => {
 
-  ctx.reply('How can i help you? 
-           use this buttons to find your topic.. 
-            
-            /welcome
-            /where
-            /what
-            /when
-            /rules
-            
-            
-');
+  ctx.reply('How can i help you?');
 })
 
 //Do something when start command was executed
